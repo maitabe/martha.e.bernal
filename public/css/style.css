@@ -1,0 +1,196 @@
+/* ==========================================================================
+   #basic reset & import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Baloo:300,400,700);
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   #typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    line-height: 1.5;
+	font-weight: 300;
+	margin: 0;
+	color: #fff;
+}
+
+ul,
+ol {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   #links & buttons
+   ========================================================================== */
+
+a {
+	text-decoration: none;
+	font-weight: 300;
+	color:#27AE60;
+}
+
+
+/* ==========================================================================
+   #Helpers
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+/* ==========================================================================
+   #Header
+   ========================================================================== */
+
+header {
+	height: 120px;
+	padding-top: 50px;
+}
+
+.header {
+    background-color: #f4f6f9;
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+    min-height: 100vh;
+    /*display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: cubic-bezier(.84,-.42,0,1.37) 2s min-height;
+}
+
+.header.autoheight {
+    min-height: 450px;
+}
+
+.row {
+	max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.container {
+	max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.logo-site {
+	width: 50%;
+	float: left;
+	padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Baloo', cursive;
+    font-size: 24px;
+}
+
+.header_menu {
+	width: 50%;
+	float: left;
+	padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header_menu ul{
+	float: right;
+	text-align: right;
+}
+
+.header_menu li{
+	display: inline-block;
+	padding-left: 35px;
+}
+
+.row.main {
+	max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 250px;
+    border: 1px solid red;
+}
+
+
+/* ==========================================================================
+   #Navigation
+   ========================================================================== */
+
+nav {
+	display: block;
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 17px;
+    ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	-webkit-text-orientation: upright;
+	-moz-text-orientation: upright;
+	-ms-text-orientation: upright;
+	text-orientation: upright;
+}
+
+nav ul {
+	margin-top: 485px;
+}
+
+nav li {
+/*	ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	-webkit-text-orientation: upright;
+	-moz-text-orientation: upright;
+	-ms-text-orientation: upright;
+	text-orientation: upright;*/
+}
