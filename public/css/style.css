@@ -81,8 +81,43 @@ a {
    ========================================================================== */
 
 header {
-	height: 120px;
+	height: 130px;
 	padding-top: 50px;
+	border:1px solid green;
+}
+
+.container{
+	max-width: 1170px;
+	border: 1px solid red;
+}
+
+.header-menu {
+	font-size: 35px;
+	font-family: 'Baloo', cursive;
+
+}
+
+header.site {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    /*padding: 15px 0 0;
+    height: 90px;*/
+}
+
+.main-intro {
+	background-color: #f4f6f9;
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+    min-height: 100vh;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: cubic-bezier(.84,-.42,0,1.37) 2s min-height;
+}
+
+.main-intro.autoheight {
+    min-height: 450px;
 }
 
 .header {
@@ -105,6 +140,97 @@ header {
     min-height: 450px;
 }
 
+.main {
+    margin-top: -7rem;
+    padding-bottom: 9rem;
+    border: 1px solid blue;
+}
+
+.main-title {
+	border: 1px solid green;
+	width: 15%;
+	display: block;
+	float: left;
+    /*width: 80px;*/
+    /*position: fixed;*/
+    /*left: 0;
+    top: 0;
+    bottom: 0;*/
+    font-size: 17px;
+    ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	-webkit-text-orientation: upright;
+	-moz-text-orientation: upright;
+	-ms-text-orientation: upright;
+	text-orientation: upright;
+}
+
+.main-title li {
+	color: black;
+	text-align: center;
+}
+
+.main-column {
+	width: 70%;
+	display: block;
+	float: left;
+	border: 1px solid orange;
+}
+
+.main-space {
+	border: 1px solid green;
+	width: 15%;
+	display: block;
+	float: left;
+}
+
+
+.column-one {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 0;
+    border: 1px solid orange;
+}
+
+.column-content {
+	/*background-color: #fff;*/
+    box-shadow: 0 2rem 3rem rgba(37,55,134,.2);
+    position: relative;
+    display: block;
+}
+
+.hex-holder{
+  position: relative;
+  margin: 1em auto;
+  width: 10em; height: 17.32em;
+  border-radius: 1em/ .5em;
+  opacity: .25;
+  background: orange;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+
+.hex-holder:before, .hex-holder:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.hex-holder:before {
+  transform: rotate(60deg);
+}
+.hex-holder:after {
+  transform: rotate(-60deg);
+}
+.hex-holder:hover {
+  opacity: 1;
+}
+
 .row {
 	max-width: 75rem;
     margin-left: auto;
@@ -117,6 +243,7 @@ header {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    border: 1px solid blue;
 }
 
 .logo-site {
@@ -125,7 +252,7 @@ header {
 	padding-left: 1rem;
     padding-right: 1rem;
     font-family: 'Baloo', cursive;
-    font-size: 24px;
+    /*font-size: 24px;*/
 }
 
 .header_menu {
@@ -177,6 +304,7 @@ nav {
 	-moz-text-orientation: upright;
 	-ms-text-orientation: upright;
 	text-orientation: upright;
+	border: 1px solid orange;
 }
 
 nav ul {
