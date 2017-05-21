@@ -257,6 +257,7 @@ header.site {
   opacity: .25;
   /*background: orange;*/
   background: #43CCC1;
+  /*background: rgb(95, 200, 215);*/
   transition: opacity .5s;
   cursor: pointer;
   box-shadow: 0 2rem 3rem rgba(37,55,134,.2);
@@ -405,3 +406,62 @@ header.site {
     margin-top: 3.8rem;
     line-height: 1.7em;
 }
+
+/* ==========================================================================
+   #media queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.container {
+    max-width: 770px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+
+	.main-title {
+		width: 10%;
+	}
+
+	.main-column {
+    width: 80%;
+    float: left;
+	}
+
+	.column-box {
+    width: 83%;
+
+	}
+
+	.main-space {
+		width: 8%;
+	}
+
+	footer {
+		    padding-top: 70.8rem;
+	}
+}
+
+
+@media only screen and (max-width : 900px) and (min-width : 490px) {
+
+	.container {
+    max-width: 553px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+
+	.main-column {
+    width: 70%;
+    float: left;
+	}
+
+	.column-box {
+    width: 100%;
+
+	}
+
+	footer {
+		    padding-top: 70.8rem;
+	}
+}
+
